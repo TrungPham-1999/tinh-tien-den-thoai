@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <script>
+        var n;
+        var cuocgoi;
+        n = parseInt(prompt("Nhập số phút gọi n: "));
+        if (n <= 50) {
+            cuocgoi = 25 + (n * 0.6);
+            document.write("Cước điện thoại sau ", n, " phút gọi là: ", cuocgoi, ".k VNĐ");
+        } else if (n <= 200) {
+            cuocgoi = (25 + (50 * 0.6)) + ((n - 50) * 0.4);
+            document.write("Cước điện thoại sau ", n, " phút gọi là: ", cuocgoi, ".k VNĐ");
+        } else {
+            cuocgoi = (25 + (50 * 0.6)) + ((n - 50) * 0.4) + (0.2 * (n - 200));
+            document.write("Cước điện thoại sau ", n, " phút gọi là: ", cuocgoi, ".k VNĐ");
+        }
+    </script>
+</head>
+
+</html>
